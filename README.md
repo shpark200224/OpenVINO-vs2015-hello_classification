@@ -63,10 +63,22 @@ ngraph.dll<br/>
 
 ## 6. 모델 다운로드
 ```
-C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\open_model_zoo\tools\downloader
+cd C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\open_model_zoo\tools\downloader
 ```
 로 이동 후
 ```
 python donwloader.py --name alexnet
 ```
+
+## 7. Model Optimizer로 Caffe 모델을 IR형식으로 변경
+
+### 7.1. prerequisites 설치
+```
+cd C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\model_optimizer\install_prerequisites
+```
+로 이동 후
+```
+install_prerequisites_caffe.bat
+```
+
 

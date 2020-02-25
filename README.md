@@ -37,6 +37,26 @@ The application outputs top-10 inference results.
 
 ## 1. 새 프로젝트 생성 후 main.cpp파일 로드
 ## 2. include 경로 설정
-C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\inference_engine\include
-C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\inference_engine\samples\cpp\common
-C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\opencv\include
+C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\inference_engine\include<br/>
+C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\inference_engine\samples\cpp\common<br/>
+C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\opencv\include<br/>
+
+* C4996 오류가 날 경우<br/>
+프로젝트의 Property Pages -> Configuration Properties -> C/C++ -> Advanced의 Disable Specific Warnings 란에 4996 입력 후 적용
+
+## 3. 링크 경로 설정
+C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\inference_engine\lib\intel64\Release<br/>
+C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\opencv\lib<br/>
+
+## 4. 입력 추가
+inference_engine.lib<br/>
+opencv_core420.lib<br/>
+opencv_imgcodecs420.lib<br/>
+
+## 5. dll파일 프로젝트 폴더로 복사
+inference_engine.dll<br/>
+opencv_core420.dll<br/>
+opencv_imgcodecs420.dll<br/>
+opencv_imgproc420.dll<br/>
+tbb.dll<br/>
+ngraph.dll<br/>

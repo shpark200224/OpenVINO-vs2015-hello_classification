@@ -41,7 +41,7 @@ C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\inferen
 C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\inference_engine\samples\cpp\common<br/>
 C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\opencv\include<br/>
 
-* C4996 오류가 날 경우<br/>
+> C4996 오류가 날 경우<br/>
 프로젝트의 Property Pages -> Configuration Properties -> C/C++ -> Advanced의 Disable Specific Warnings 란에 4996 입력 후 적용
 
 ## 3. 링크 경로 설정
@@ -60,3 +60,13 @@ opencv_imgcodecs420.dll<br/>
 opencv_imgproc420.dll<br/>
 tbb.dll<br/>
 ngraph.dll<br/>
+
+## 6. 모델 다운로드
+```
+C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\open_model_zoo\tools\downloader
+```
+로 이동 후
+```
+python donwloader.py --name alexnet
+```
+

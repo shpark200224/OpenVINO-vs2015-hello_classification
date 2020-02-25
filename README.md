@@ -34,3 +34,5 @@ The application outputs top-10 inference results.
 
 ## See Also
 * [Using Inference Engine Samples](./docs/IE_DG/Samples_Overview.md)
+
+## 1. 새 프로젝트 생성 후 main.cpp파일 로드

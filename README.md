@@ -36,3 +36,7 @@ The application outputs top-10 inference results.
 * [Using Inference Engine Samples](./docs/IE_DG/Samples_Overview.md)
 
 ## 1. 새 프로젝트 생성 후 main.cpp파일 로드
+## 2. include 경로 설정
+C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\inference_engine\include
+C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\inference_engine\samples\cpp\common
+C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\opencv\include

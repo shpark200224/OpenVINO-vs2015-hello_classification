@@ -81,4 +81,14 @@ cd C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\mode
 install_prerequisites_caffe.bat
 ```
 
+### 7.2. Caffe 모델 변환
+```
+cd C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\model_optimizer
+```
 
+```
+python mo.py --input_model <INPUT_MODEL>.caffemodel
+```
+```
+ex) python mo.py --input_model D:\_shpark200224\alexnet\alexnet.caffemodel
+```

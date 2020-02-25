@@ -92,3 +92,24 @@ python mo.py --input_model <INPUT_MODEL>.caffemodel
 ```
 ex) python mo.py --input_model D:\_shpark200224\alexnet\alexnet.caffemodel
 ```
+
+### 7.3. 프로젝트 빌드
+
+### 7.4. 실행파일 테스트
+./x64/release (또는 debug)에 있는 실행파일을 프로젝트 루트경로(sln이 있는 경로)로 복사
+```
+cd D:\_shpark200224\repo\OpenVINO-vs2015-hello_classification
+```
+프로젝트 경로로 이동 후
+```
+OpenVINO-vs2015-hello_classification <path_to_model> <path_to_image> <device_name>
+```
+명령어로 실행 테스트<br/>
+<path_to_model> : Model Optimizer로 변환한 xml파일 경로<br/>
+<path_to_image> : 추론할 이미지<br/>
+<device_name> : GPU or CPU<br/>
+
+```
+OpenVINO-vs2015-hello_classification ./IR/alexnet.xml cat.jpg GPU
+```
+실행 예<br/>

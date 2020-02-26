@@ -93,10 +93,10 @@ python mo.py --input_model <INPUT_MODEL>.caffemodel
 ex) python mo.py --input_model D:\_shpark200224\alexnet\alexnet.caffemodel
 ```
 
-### 7.3. 프로젝트 빌드
+## 8. 프로젝트 빌드
 Visual Studio 2015에서 빌드하여 실행파일(exe) 생성
 
-### 7.4. 실행파일 테스트
+## 9. 실행파일 테스트
 ./x64/release (또는 debug)에 있는 실행파일을 프로젝트 루트경로(sln이 있는 경로)로 복사
 ```
 cd D:\_shpark200224\repo\OpenVINO-vs2015-hello_classification
@@ -120,5 +120,5 @@ OpenVINO-vs2015-hello_classification ./IR/alexnet.xml cat.jpg GPU
 > * Please, make sure that pre-processing library inference_engine_preproc.dll is in D:\_shpark200224\repo\OpenVINO-vs2015-hello_classification
 C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\inference_engine\bin\intel64\Release에 있는 inference_engine_preproc.dll을 프로젝트 폴더로 복사
 
-### 7.5 결과 확인
+## 10. 결과 확인
 <img src="/doc/result.png" title="result" alt="result"></img><br/>

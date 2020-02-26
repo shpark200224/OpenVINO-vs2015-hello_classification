@@ -121,4 +121,4 @@ OpenVINO-vs2015-hello_classification ./IR/alexnet.xml cat.jpg GPU
 C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\inference_engine\bin\intel64\Release에 있는 inference_engine_preproc.dll을 프로젝트 폴더로 복사
 
 ### 7.5 결과 확인
-<img src="/doc/result.png" width="450px" height="300px" title="result" alt="result"></img><br/>
+<img src="/doc/result.png" title="result" alt="result"></img><br/>

@@ -94,6 +94,7 @@ ex) python mo.py --input_model D:\_shpark200224\alexnet\alexnet.caffemodel
 ```
 
 ### 7.3. 프로젝트 빌드
+Visual Studio 2015에서 빌드하여 실행파일(exe) 생성
 
 ### 7.4. 실행파일 테스트
 ./x64/release (또는 debug)에 있는 실행파일을 프로젝트 루트경로(sln이 있는 경로)로 복사
@@ -113,3 +114,11 @@ OpenVINO-vs2015-hello_classification <path_to_model> <path_to_image> <device_nam
 OpenVINO-vs2015-hello_classification ./IR/alexnet.xml cat.jpg GPU
 ```
 실행 예<br/>
+
+> * clDNNPlugin.dll 로드 문제 : C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\inference_engine\bin\intel64\Release에서 dll파일 복사하여 현재 프로젝트 폴더에 붙여넣기
+> * Doesn't support conversion from not dense cv::Mat - jpg이미지 사용시 빌생 -> bmp이미지로 사용
+> * Please, make sure that pre-processing library inference_engine_preproc.dll is in D:\_shpark200224\repo\OpenVINO-vs2015-hello_classification
+C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\inference_engine\bin\intel64\Release에 있는 inference_engine_preproc.dll을 프로젝트 폴더로 복사
+
+### 7.5 결과 확인
+<img src="/doc/result.png" width="450px" height="300px" title="result" alt="result"></img><br/>

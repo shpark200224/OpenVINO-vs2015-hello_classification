@@ -110,10 +110,11 @@ OpenVINO-vs2015-hello_classification <path_to_model> <path_to_image> <device_nam
 <path_to_image> : 추론할 이미지<br/>
 <device_name> : GPU or CPU<br/>
 
+실행 예<br/>
 ```
 OpenVINO-vs2015-hello_classification ./IR/alexnet.xml cat.jpg GPU
 ```
-실행 예<br/>
+
 
 > * clDNNPlugin.dll 로드 문제 : C:\Program Files (x86)\IntelSWTools\openvino_2020.1.033\deployment_tools\inference_engine\bin\intel64\Release에서 dll파일 복사하여 현재 프로젝트 폴더에 붙여넣기
 > * Doesn't support conversion from not dense cv::Mat - jpg이미지 사용시 빌생 -> bmp이미지로 사용
